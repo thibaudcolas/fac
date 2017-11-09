@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pictures>
+	<picture>
+		<name_en>elephant</name_en>
+		<name_fr>elephant</name_fr>
+		<address>R.drawable.elephant</address>
+	</picture>
+	<picture>
+		<name_en>elephant</name_en>
+		<name_fr>elephant</name_fr>
+		<address>R.drawable.elephant</address>
+	</picture>
+</pictures>

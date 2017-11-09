@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DDFFAA66"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:showDividers="none"
+    android:textAlignment="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/label"
+            android:textColor="#FF4422"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="@+id/label"
+            android:textAlignment="center"
+            android:textColor="#FF4422"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:text="@+id/label"
+            android:textAlignment="textEnd"
+            android:textColor="#FF4422"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
