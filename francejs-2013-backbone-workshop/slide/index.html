@@ -1,0 +1,308 @@
+﻿<!doctype html>  
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Workshop Backbone - FranceJS</title>
+
+		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
+		<meta name="author" content="Hakim El Hattab">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div id="reveal">
+
+			<div class="state-background"></div>
+			
+			<div class="slides">
+				<section>
+					<h1>Workshop Backbone</h1>
+					<h2>Welcome :)</h2>
+					
+					<ul>
+						<li>Le singlepage et ses leader</li>
+						<li>Premier pas avec Backbone</li>
+						<li>Réalisation d'une appli simple "Todo"</li>
+						<li>Du multi page avec un router</li>
+						<li>Une conception de page pratique</li>
+						<li>Tips - views, models, router</li>
+						<li>Bonus : Require, LocalStorage, Grunt</li>
+					</ul>
+					
+					<p>
+						<i><small><a href="http://inabook.fr">Inateno</a> / <a href="http://twitter.com/inateno">@inateno</a></small></i>
+					</p>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+				
+				<section>
+					<h2>Singlepage et ses Leader</h2>
+					Angular VS Backbone
+					<br />
+					
+					<br /><br />
+					Big Bundle VS ToolBox
+					<br />
+					DoubleBinding VS Manual Binding
+					<br />
+					Heavy VS Lite
+					<br />
+					Simple VS Complex
+					<br />
+					(on big application)
+					<br /><br />
+					
+					Testez les deux pour savoir lequel vous préférez
+				</section>
+				
+				<section>
+					<section>
+						<h2>Premier pas</h2>
+						<p>
+							- Récupérez le zip sur la clé<br />
+							- ou sur github:<br />
+							/Inateno/FranceJS-Workshop-Backbone-2013<br />
+							- présentation des composants Backbone<br />
+						</p>
+					</section>
+					<section>
+						<h2>View</h2>
+						<img src="assets/view-shema.png" />
+						<br />
+						Peut afficher un model (comme ici)
+					</section>
+					<section>
+						<h2>Model</h2>
+						<img src="assets/model-shema.png" />
+					</section>
+					<section>
+						<h2>Collection</h2>
+						<img src="assets/collection-shema.png" />
+						<br />
+						"DB locale"
+					</section>
+					<section>
+						<h2>Router</h2>
+						<img src="assets/router-shema.png" />
+					</section>
+				</section>
+				
+				<section>
+					<h2>Step 1 - Todo Simple</h2>
+					- ouvrez le dossier step1
+					<br />
+					- une view Todo (permet l'affichage d'un model Todo)
+					<br />
+					- une view TodoEditor (permet la création d'une Todo)
+					<br />
+					- un model Todo (structure des données d'une Todo)
+					<br />
+					- une collection Todos (stock les Todos, ici en dur)
+					<br /><br />
+					<p>
+						Ouvrez le main.js et décommentez les lignes commentées, lancez index.html 
+					</p>
+				</section>
+				<section>
+					<h2>Step 2 - maniement avancé</h2>
+					- ouvrez le dossier step2
+					<br />
+					- ajout de l'ordre dans la vue (orderUp, orderDown)
+					<br />
+					- ajout de l'ordre dans le model (upMe, downMe)
+					<br />
+					- ajout de l'évènement "sort" sur la collection dans le main
+					<br />
+					- re-render les todos en évitant les zombies views
+					<br />
+					- ajout d'un trigger supplémentaire dans la view pour éviter les nested views
+					<br />
+					(car on stock la view dans un objet maintenant)
+				</section>
+
+				<section>
+					<h2>Step 3 - Du multi-page -> router</h2>
+					- ouvrez le dossier step3
+					<br />
+					- ajout d'un router explicite
+					<br />
+					- ajout de vues parentes pour faire des pages
+					<br />
+					- creation d'un objet simple "TodoList"
+					<br />
+					- middlewar destroy pour éviter les zombie et nested views
+				</section>
+				
+				<section>
+					<h2>Un router DRY et pratique</h2>
+					Ecrire chaque route a la main c'est un peu répétitif, et le code est globalement similaire.
+					<br />
+					--> une seule route
+					<br />
+					--> décomposition de la route pour arriver a la page ciblé
+					<br />
+					--> chargement de la page en lui donnant le reste des arguments
+					<br />
+					dossier step4
+				</section>
+				<section>
+					<h2>Une conception de page pratique</h2>
+					- une view est un module
+					<br />
+					- une page est un squelette déstiné à recevoir des modules
+					<br />
+					- une page à une méthode de route interne
+				</section>
+				
+				<section>
+					<section>
+						<h2>Tips time !</h2>
+					</section>
+					
+					<section>
+						<h2>Views</h2>
+						- faire une vue de base
+						<br />
+						- ajout d'un constructor intermédiaire
+						<br />
+						- ajouter un objet "views" enfant
+						<br />
+						- une méthode oRender sur la base
+						<br />
+						- pensez recyclage !
+					</section>
+					
+					<section>
+						<h2>Models - Collections</h2>
+						- pensez à la méthode de validation
+						<br />
+						- changer un attribut ne trigger pas forcément (array, objet)
+						<br />
+						- évitez l'emboîtement de model / collections
+						<br />
+						- sort ne trigger que lors d'un add / delete / reset / update
+						<br />
+						- n'hésitez pas à overrider les méthodes d'origine (save, fetch)
+					</section>
+					
+					<section>
+						<h2>Router</h2>
+						- définissez un fonctionnement de base pour établir un router macro
+						<br />
+						- un router interne a une page permet un router global plus générique
+					</section>
+				</section>
+				
+				<section>
+					<h2>Bonus time - RequireJS</h2>
+					- c'est quoi
+					<br />
+					- quel intérêt
+					<br />
+					- application sur notre code
+				</section>
+				
+				<section>
+					<h2>Bonus time - LocalStorage</h2>
+					- l'importance du LocalStorage
+					<br />
+					- stash.js petit mais costaud
+					<br />
+					- application sur notre code
+				</section>
+					
+				<section>
+					<h2>Bonus time - Grunt</h2>
+					- c'est quoi
+					<br />
+					- compatibilité avec Require
+					<br />
+				</section>
+				
+				<section>
+					<h2>Conseils</h2>
+					- usez des sockets
+					<br />
+					- pensez au cache et localStorage (mode offline)
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+		
+		<script src="js/reveal.js"></script>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			// Fires when a slide with data-state=customevent is activated
+			Reveal.addEventListener( 'customevent', function() {
+				alert( '"customevent" has fired' );
+			} );
+
+			// Fires each time a new slide is activated
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.indexh & event.indexv
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Loops the presentation, defaults to false
+				loop: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>
