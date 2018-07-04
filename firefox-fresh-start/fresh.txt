@@ -1,0 +1,20 @@
+const w = require("widget");
+const s = require("self");
+const t = require("tabs");
+ 
+w.Widget({
+  id: "home-link-thibweb",
+  label: "Let there be tabs",
+  contentURL: s.data.url("fresh.png"),
+  onClick: function() {
+    t.open("https://www.xkcd.com/");
+    t.open("http://www.smbc-comics.com/");
+    t.open("http://everydayblues.everydayblues.net/");
+    t.open("http://www.asofterworld.com/");
+    t.open("http://www.dilbert.com/");
+    t.open("http://www.qwantz.com/");
+    t.open("http://www.little-gamers.com/");
+    t.open("http://l-autofictif.over-blog.com/");
+    t.open("http://vidberg.blog.lemonde.fr/");
+  }
+});

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exhibit</title>
+</head>
+<body>
+  <h1>Using ERB layout.</h1>
+  <p>The current user is <%= @user %></p>
+
+  <ul>
+    <li><a href="/sessions/new">New session</a></li>
+    <li><%= @height %></li>
+    <li>The current environment is <%= @environment %></li>
+  </ul>
+
+  <% if @message %>
+    <p>You ave a message:</p>
+    <blockquote><% @message %></blockquote>
+  <% end %>
+
+  <%= yield %>
+</body>
+</html>
