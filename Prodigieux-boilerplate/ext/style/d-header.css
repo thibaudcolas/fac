@@ -1,0 +1,31 @@
+#header {
+	border-bottom : 1px solid #f0f0f0;
+}
+
+h1 {
+	font-size : 200%;
+	font-weight : normal;
+	letter-spacing : 1px;
+	padding-bottom : 5px;
+}
+
+#menu {
+	text-align : right;
+	font-size : 120%;
+	list-style-type : none;
+}
+
+#menu li {
+	display : inline;
+}
+
+#menu li a {
+	padding : 3px;
+	color : #369;
+	border-bottom : 3px solid #fff;
+}
+
+#menu li a:hover {
+	color : #CCC;
+	border-color : #369;
+}

@@ -1,0 +1,31 @@
+.grid_25 {
+	width : 25%;
+}
+
+.grid_33 {
+	width : 33%;
+}
+
+.grid_50 {
+	width : 50%;
+}
+
+.grid_66 {
+	width : 66%;
+}
+
+.grid_75 {
+	width : 75%;
+}
+
+.column {
+	float: left;
+	overflow: hidden;
+	display: inline;
+}
+
+.row {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+#contenu {
+	margin-top : 15px;
+}
+
+h2 {
+	font-size : 160%;
+	font-weight : normal;
+	letter-spacing : 1px;
+	margin : 15px 0;
+}
+
+p {
+	font-size : 120%;
+	margin : 5px 0;
+}

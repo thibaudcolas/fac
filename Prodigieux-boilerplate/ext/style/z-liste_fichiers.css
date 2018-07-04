@@ -1,0 +1,4 @@
+<?php
+// Page z-liste_fichiers
+$titre .= 'z-liste_fichiers';
+$contenu .= '<p>z-liste_fichiers</p>';

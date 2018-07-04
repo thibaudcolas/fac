@@ -1,0 +1,10 @@
+html {
+	text-align : center;
+}
+
+body {
+	width : 500px;
+	text-align : left;
+	margin : 10px auto;
+	font : 62.5% sans-serif; 
+}
