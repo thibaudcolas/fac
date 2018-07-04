@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>jQuery Tooltip</title>
+		<link rel="stylesheet" type="text/css" href="tooltip.css" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<link rel="stylesheet" type="text/css" href="includes/tooltip_ie.css" />
+		<![endif]-->
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<a class="logo" href="#"></a>
+			</header>
+			<article>
+				<h1>Tooltips !</h1>
+				<aside>
+					<h2>Aside Heading</h2>
+					<p data-tip="tooltip-sidebar" class="tooltip">Lorem ipsum dolor sit amet consectetur <a href="#">HTML-based tooltip</a> adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</aside>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <a href="#" data-tip="This is text for a tooltip." class="tooltip">text-based tooltip</a> laboris nisi ut aliquip consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="clear-all"></div>
+			</article>
+			<footer>Your company name.</footer>
+			<div id="tooltip-container">Tooltip. Mine.</div>
+			<div class="tooltip-html">
+				<div id="tooltip-sidebar">
+					<img src="logo.png" style="float:left;"/>
+					This is a tip that has an image in it.
+				</div>
+			</div>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+  	<script type="text/javascript" src="tooltip.js"></script>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+#tooltip-container {
+  /* IE 7/8 don't support max-width. */
+  width:200px;
+  /* They don't support RGBA either. */
+  background: none;
+  background-image: url(ie_transparency.png);
+}
