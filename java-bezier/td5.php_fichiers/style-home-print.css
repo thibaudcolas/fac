@@ -1,0 +1,69 @@
+/* les couleurs **/
+/* bleu foncé: #22397c */
+
+body {
+	color: black;
+	background: white;
+	font-family: "Comic Sans MS", Georgia, serif;
+	font-size: 10pt;
+}
+
+em  { 
+	color: #22397c; 
+	font-style: normal; 
+	font-weight: bold 
+}
+
+H1,H2,H3,DT {
+  color: #22397c; /* bleu fonce */
+  font-size: 12pt
+
+}
+
+TABLE.MENUBAR { 
+	width: 100%;
+	background-color: #22397c;
+}
+
+TD.MENU  {
+	color: white; 	
+	background-color: #22397c;
+	text-align: center;
+	border: solid 2pt #22397c;
+	margin: 0px;
+	padding: 4px;
+    font-size: 11pt
+}
+TD.ACTIVE  { 
+	background-color: #fbffc9;
+	text-align: center;
+	border: solid 2pt #22397c;
+	margin: 0px;
+	padding: 4px
+}
+
+A.MENU   { 
+	color: white; 	
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 11pt
+}
+
+A.ACTIVE {
+	color: #22397c;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+A.MENU:visited   { 
+	color: #fbffc9 
+}
+A.MENU:hover {
+	color:#ee5e19;
+}
+
+
+.AUTHOR { 
+	font-style: oblique 
+}

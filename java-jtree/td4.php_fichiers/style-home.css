@@ -1,0 +1,76 @@
+/* les couleurs **/
+/* bleu foncé: #22397c */
+
+body {
+  color: black;
+  background: white;
+  font-family: verdana, arial, helvetica, sans-serif; 
+}
+LI.fleche {
+	list-style-position: inside;
+	list-style-image: url(../Images/fleche.gif);
+	list-style-type: none;
+}
+
+em  { 
+	color: #22397c; 
+	font-style: normal; 
+	font-weight: bold 
+}
+
+H1,H2,H3,DT {
+  color: #22397c; /* bleu fonce */
+}
+
+TABLE.MENUBAR { 
+	width: 100%;
+	background-color: #22397c;
+}
+
+TD.MENU  {
+	color: white; 	
+	background-color: #22397c;
+	text-align: center;
+	border: solid 2pt #22397c;
+	margin: 0px;
+	padding: 4px
+}
+TD.ACTIVE  { 
+	background-color: #fbffc9;
+	text-align: center;
+	border: solid 2pt #22397c;
+	margin: 0px;
+	padding: 4px
+}
+
+A.MENU   { 
+	color: white; 	
+	text-align: center; 
+	text-decoration: none 
+}
+
+A.ACTIVE {
+	color: #22397c;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+A.MENU:visited   { 
+	color: #fbffc9 
+}
+A.MENU:hover {
+	color:#ee5e19;
+}
+
+
+.AUTHOR { 
+	font-style: oblique 
+}
+img {
+	border: none;
+}
+.comments {
+	font-size: small;
+	color: #666666;
+}

@@ -1,0 +1,47 @@
+<html><head>
+
+<title>TD4 - JTree et architecture MVC</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><link rel="stylesheet" href="td5.php_fichiers/style-home.css" type="text/css"><link rel="stylesheet" type="text/css" href="td5.php_fichiers/style-home-print.css" media="print" title="Normal">
+</head><body><table width="100%" border="0">
+
+	<tbody><tr> 
+
+	<td class="MENU" valign="center" align="left">Université Montp. II <br> Mountaz Hascoët </td>
+
+	<td class="MENU" valign="center" align="center"> TD4 - JTree et architecture MVC</td>
+
+	<td class="MENU" valign="center" align="right"><a class="MENU" href="http://www2.lirmm.fr/%7Emountaz/Ens/M1/index.php">Master <br> Module IHM </a></td>
+
+	</tr>
+
+	</tbody></table> 
+<h1>TD5 - Edition de courbes de Bézier </h1>
+<ol>
+  <li>On souhaire gérer l'édition de  courbes de Bézier en permettant à 
+un individu d'éditer les points de contrôles  Ci et les tangentes 
+associées et caractérisées par Ci et Ti (cf figure ci-dessous). On  
+suppose que le programme qui dessine les courbes est écrit en java. Le 
+dessin  se fait dans une classe DessinBezier qui hérite de JPanel et qui
+ dispose d'une  méthode <em>pick(int x, int y)</em>. Cette  méthode 
+retourne l'élément graphique présent sous le point de coordonnées x, y  
+s'il en est et sinon la méthode retourne <em>null</em>.  Un élément graphique peut être:
+    <ol>
+      <li>une courbe </li>
+      <li>un point de contrôle (par exemple C1) </li>
+      <li>un point permettant la définition de la tangente (par exemple T1). </li>
+    </ol>
+  </li><li>Ecrire le  gestionnaire d'évènement qui permettra de gérer les interactions suivantes:</li>
+    <ol>
+      <li>Rendre visible les points de contrôle lorsqu'on clique sur la courbe une  première fois.</li>
+      <li>Déplacer un point de contrôle lorsque l'on clique dessus et 
+que l'on  déplace la souris en maintenant le bouton enfoncé. Les 
+tangentes se déplacent  alors parallèles à elles mêmes.</li>
+      <li>Déplacer l'extrémité d'une tangente lorsqu'on clique dessus et
+ que l'on  déplace la souris en maintenant le bouton enfoncé. Le point 
+de contrôle reste quant  à lui immobile. </li>
+      <li>L'ajout d'un point de contrôle lorsqu'on clique sur la courbe alors que  les points de contrôle sont visibles.</li>
+    </ol>
+  NB: un diagramme état-transition peut  permettre de spécifier les interactions avant de les implémenter. 
+</ol>
+<p><img src="td5.php_fichiers/bezier.png" alt="bezier" longdesc="bezier.png" height="512" width="640"></p>
+</body></html>
