@@ -1,0 +1,123 @@
+42
+a <- 45
+a
+coeur -> "I love Melody"
+coeur <- "I love Melody"
+coeur
+is.numeric(coeur)
+is.character(coeur)
+test <- scan(nmax=1)
+test
+v <- "Bonjour"
+toupper(substr(v,2,(nchar(v)-1)))
+q()
+demo()
+source("/Users/Will/Documents/Informatique/R/test.r")
+source("test.r")
+getwd()
+setwd("/Users/Will/Documents/Informatique/R")
+source("test.r")
+source("scripts/test_sink.r")
+source("/scripts/test_sink.r")
+getwd()
+source("scripts/test_sink.r")
+setwd("/Users/Will/Documents/Informatique/R/")
+source("scripts/test_sink.r")
+getwd()
+source("/Users/Will/Documents/Informatique/R/scripts/test_sink.r")
+setwd("/Users/Will/")
+source("/Users/Will/Documents/Informatique/R/scripts/test_sink.r")
+getwd()
+source("/Users/Will/Documents/Informatique/R/scripts/test_sink.r")
+setwd("/Users/Will/Documents/Informatique/R/")
+source("scripts/test_sink.r")
+source("scripts/generation.r")
+load("/Users/Will/Documents/Informatique/R/donnees/resultat.RData")
+load("/Users/Will/Documents/Informatique/R/donnees/resultat.RData")
+source("scripts/generation.r")
+rm()
+source("scripts/generation.r")
+rm()
+source("scripts/generation.r")
+rm()
+source("scripts/analyse.r")
+rm(resultat)
+source("scripts/generation.r")
+rm(resultat)
+source("scripts/analyse.r")
+source("scripts/varmultiples.r")
+vector("numeric", 10)
+vecteur <-- vector("numeric", 5)#
+#
+vector()#
+#
+numeric(4)#
+#
+character(3)#
+#
+logical(2)#
+#
+scan(nmax=3)#
+#
+1:10#
+#
+#
+12:4#
+#
+rep(3,12)#
+#
+seq(0,12,3)#
+vecteur <-- vector("numeric", 5)#
+#
+vector()#
+#
+numeric(4)#
+#
+character(3)#
+#
+logical(2)#
+#
+scan(nmax=3)#
+#
+1:10#
+#
+#
+12:4#
+#
+rep(3,12)#
+#
+seq(0,12,3)
+v1 <- numeric(4)#
+#
+v2 <- seq(5,50,11)#
+#
+v3 <- c(v1, v2)#
+#
+print(v3)
+poids <- c(77, 58, 66, 82)
+poids
+names(poids) <- c("Marc", "Sophie", "Julie", "Blaise")
+poids
+vecteur <- 11:25#
+vecteur#
+#
+vecteur[1]#
+vecteur[5]
+prenoms <- c("Philippe", "Irene", "Pierre", "Paul", "Lucie", "Chloe", "Jacques", "Mathilde")#
+#
+prenoms[1:2]#
+#
+prenoms[c(4,6)]#
+#
+prenoms[rep(8,10)]#
+#
+prenoms[c(3,8,3)]#
+#
+prenoms[-(1:3)]
+prenoms[c(rep(TRUE, 3), rep(FALSE,4), TRUE)]#
+#
+vecteur2 <- c(1:12, 8:5, rep(2,4), 8:15, 16:12)#
+#
+vecteur2 > 7#
+#
+vecteur2[vecteur2 > 7]

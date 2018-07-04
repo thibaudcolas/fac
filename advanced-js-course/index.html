@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+
+  <input type="text" id="txtInput">
+
+
+  <script src="eventUtility.js"></script>
+  <script type="text/javascript">
+    "use strict";
+    var val = 0;
+
+    var txtbox = document.getElementById("txtInput");
+    txtbox.addEventListener("keypress", function (e) {
+      console.log(eventUtility.getCharCode(e));
+    });
+
+    console.log(val);
+  </script>
+</body>
+</html>
