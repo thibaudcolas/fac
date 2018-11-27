@@ -1,0 +1,26 @@
+<html>
+
+	<head>
+		<script type="text/javascript">
+		<!--
+			function affq(obj)
+			{
+				i = obj.value;
+				if (i==0) document.radios.choix.value = "Matin";
+				if (i==1) document.radios.choix.value = "Midi";
+				if (i==2) document.radios.choix.value = "Soir";
+			}
+		//-->
+		</script>
+	</head>
+	
+	<body>
+		<form name="radios">
+			<input type="radio" name="quand" value="0" onclick="affq(this)" /> Matin
+			<input type="radio" name="quand" value="1" onclick="affq(this)" /> Midi
+			<input type="radio" name="quand" value="2" onclick="affq(this)" /> Soir		
+			&nbsp; &nbsp; Quand : <input type="text" name="choix" size="10" />
+		</form>
+	</body>
+	
+</html>

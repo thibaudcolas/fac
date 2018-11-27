@@ -1,0 +1,47 @@
+<html>
+
+	<head>
+		<script type="text/javascript">
+		<!--
+			function verifNom()
+			{
+				
+			}	
+			function verifNum()
+			{
+				
+			}	
+			function verifNat()
+			{
+				
+			}	
+		//-->
+		</script>
+	</head>
+	
+	<body>
+	<form onsubmit="return verifFormCompte(this)" action="#" name="formCompte">
+		<table>
+			<tr>
+				<td>Nom : </td>
+				<td><input type="text" name="nom" size="13" onBlur="verifNom()"/></td>
+			</tr>
+			<tr>
+				<td>Numéro de compte : </td>
+				<td><input type="text" name="compte" size="10" onBlur="verifNum()"/></td>
+			</tr>
+		</table>
+		<br /> compte : &nbsp; &nbsp;
+		<input type="radio" name="lequel" value="0" /> Compte courant &nbsp;
+		<input type="radio" name="lequel" value="1" /> Compte épargne
+		<br /> &nbsp;
+		<br /> &nbsp; &nbsp; <input type="submit" value="Envoyer" onClick="verifNat()"/>
+	</form>
+		<script type="text/javascript">
+		<!--
+			
+		//-->
+		</script>
+	</body>
+	
+</html>

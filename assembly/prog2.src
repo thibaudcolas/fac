@@ -1,0 +1,4 @@
+	LOAD_A #2
+	LOAD_B #0
+saut	SUB
+	JUMP saut

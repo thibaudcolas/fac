@@ -1,0 +1,6 @@
+	LOAD_A #2
+	LOAD_B #10
+saut	SOUS_B
+	JMPZ fin
+	JMP saut
+fin	NOP

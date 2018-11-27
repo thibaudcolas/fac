@@ -1,0 +1,5 @@
+	LOAD_A #5
+	LOAD_B #1
+saut	MUL_B
+	JMP saut
+	

@@ -1,0 +1,8 @@
+	LOAD_A #2
+	LOAD_C #16
+	LOAD_B #5
+boucle  MUL_AC_C
+        DEC_B #1
+	JMP_Z fin
+	JMP boucle
+fin	NOP

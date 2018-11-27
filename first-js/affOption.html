@@ -1,0 +1,25 @@
+<html>
+
+	<head>
+		<script type="text/javascript">
+		<!--
+			function affOption(obj)
+			{
+				document.selects.choixDep.value = obj.value;
+			}
+		//-->
+		</script>
+	</head>
+	
+	<body>
+	<form name="selects">
+		<select size="3" onchange="affOption(this)">
+			<option> Matin </option>
+			<option> Midi </option>
+			<option> Soir </option>
+		</select>
+		&nbsp; &nbsp; Quand : <input type="text" name="choix" size="10" />
+		</form>
+	</body>
+	
+</html>

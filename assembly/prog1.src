@@ -1,0 +1,5 @@
+	LOAD_A #99
+	LOAD_B #450
+	ADD	
+	LOAD_A #2
+	DIV
